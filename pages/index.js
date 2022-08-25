@@ -23,9 +23,12 @@ const index = () => {
 					</Link>
 				</div>
 				<div className=' w-[32rem] h-min flex justify-center mt-5'>
-					<form action='' className='flex justify-center flex-col'>
+					<form
+						action='/api/register'
+						method='post'
+						className='flex justify-center flex-col'>
 						<input
-							type='name'
+							type='text'
 							name='name'
 							placeholder='Name'
 							className='border-2 border-b-slate-400 rounded-sm mt-10 w-72'
@@ -36,20 +39,37 @@ const index = () => {
 							placeholder='email'
 							className='border-2 border-b-slate-400 rounded-sm mt-10 w-72'
 						/>
+
 						<input
 							type='password'
 							name='password'
 							placeholder='Password'
 							className='border-2 border-b-slate-400 rounded-sm mt-10 w-72'
 						/>
+						<div>
+							<label htmlFor='student'>Student</label>
+							<input
+								type='radio'
+								name='category'
+								value='student'
+								id='student'
+							/>
+						</div>
+						<div>
+							<label htmlFor='teacher'>Teacher</label>
+							<input
+								type='radio'
+								name='category'
+								value='teacher'
+								id='teacher'
+							/>
+						</div>
+						<input
+							type='submit'
+							value='register'
+							className='bg-purple text-white border rounded-full cursor-pointer'
+						/>
 					</form>
-				</div>
-				<div className='w-[32rem]  h-min flex justify-center mt-5'>
-					<Link href='/login'>
-						<button className='bg-purple text-white px-4 py-1 border-0 rounded-full text-xl'>
-							Sign Up
-						</button>
-					</Link>
 				</div>
 			</div>
 		</div>

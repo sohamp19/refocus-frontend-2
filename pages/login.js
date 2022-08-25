@@ -23,7 +23,10 @@ const index = () => {
 					</Link>
 				</div>
 				<div className=' w-[32rem] h-min flex justify-center mt-5'>
-					<form action='' className='flex justify-center flex-col'>
+					<form
+						action='/api/login'
+						method='post'
+						className='flex justify-center flex-col'>
 						<input
 							type='email'
 							name='email'
@@ -36,19 +39,30 @@ const index = () => {
 							placeholder='Password'
 							className='border-2 border-b-slate-400 rounded-sm mt-10 w-72'
 						/>
+						<div>
+							<label htmlFor='student'>Student</label>
+							<input
+								type='radio'
+								name='category'
+								value='student'
+								id='student'
+							/>
+						</div>
+						<div>
+							<label htmlFor='teacher'>Teacher</label>
+							<input
+								type='radio'
+								name='category'
+								value='teacher'
+								id='teacher'
+							/>
+						</div>
+						<input
+							type='submit'
+							value='login'
+							className='bg-purple text-white border rounded-full cursor-pointer'
+						/>
 					</form>
-				</div>
-				<div className='w-[32rem]  h-min flex justify-center mt-8'>
-					<Link href='studentHome'>
-						<button className='bg-purple text-white px-4 mx-3 py-1 border-0 rounded-full '>
-							Student Login
-						</button>
-					</Link>
-					<Link href='teacherHome'>
-						<button className='bg-purple text-white px-4 py-1 border-0 rounded-full mx-3'>
-							Teacher Login
-						</button>
-					</Link>
 				</div>
 			</div>
 		</div>

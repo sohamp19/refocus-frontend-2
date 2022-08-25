@@ -8,7 +8,6 @@ import {
 } from 'react-icons/ai';
 import { BiLogOut } from 'react-icons/bi';
 import { HiMenuAlt2 } from 'react-icons/hi';
-import { FaGraduationCap } from 'react-icons/fa';
 import Iframe from 'react-iframe';
 
 const studentCalendar = () => {
