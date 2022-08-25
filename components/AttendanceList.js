@@ -1,12 +1,10 @@
 import React from 'react';
-import Avatar from 'react-avatar';
 
 const AttendanceList = () => {
 	return (
 		<div className='w-full mx-4'>
 			<div className='flex flex-row justify-between items-center'>
 				<div className='avatar-attendance my-3 flex flex-row'>
-					<Avatar name='Student Name' size='40' />
 					<div className='ml-3'>
 						<h2>Attendance = 75.00%</h2>
 						<h3 className='opacity-60 text-xs'>
