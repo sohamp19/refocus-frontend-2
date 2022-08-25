@@ -45,9 +45,11 @@ const teacherHome = () => {
 						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
 							calendar
 						</h1>
-						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
-							profile
-						</h1>
+						<Link href='/teacherExport'>
+							<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
+								export
+							</h1>
+						</Link>
 						<div className='mx-3'>
 							<HiMenuAlt2 className='text-2xl cursor-pointer' />
 						</div>

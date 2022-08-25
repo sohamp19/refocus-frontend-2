@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { TbSpeakerphone } from 'react-icons/tb';
 import {
@@ -8,9 +8,14 @@ import {
 } from 'react-icons/ai';
 import { BiLogOut } from 'react-icons/bi';
 import { HiMenuAlt2 } from 'react-icons/hi';
-import Announcements from '../components/Announcements';
+import DatePicker from 'react-datepicker';
+import { FaDownload } from 'react-icons/fa';
+import 'react-datepicker/dist/react-datepicker.css';
 
-const teacherAnnouncements = () => {
+const teacherExport = () => {
+	const [startDate, setStartDate] = useState(new Date());
+	const [startDate2, setStartDate2] = useState(new Date());
+
 	return (
 		<div className='bg-cyan w-full h-screen flex items-center justify-center'>
 			<div className='bg-purple w-12 h-72 border rounded-full flex flex-col items-center justify-center translate-x-6'>
@@ -47,43 +52,28 @@ const teacherAnnouncements = () => {
 						</div>
 					</div>
 				</div>
-				<div className='flex  justify-center mt-5'>
-					<h1 className='text-3xl font-bold'>ANNOUNCEMENTS</h1>
-				</div>
-				<div className='flex justify-between  mt-4'>
-					<div className='w-2/3 overflow-auto h-80'>
-						<Announcements />
-						<Announcements />
-						<Announcements />
-						<Announcements />
+				<div className='flex flex-col items-center justify-center mt-5 '>
+					<h1 className='text-3xl font-bold'>EXPORT AS CSV</h1>
+					<div className='flex flex-row mt-5'>
+						<div>
+							<h1 className='ml-52'>From:</h1>
+							<DatePicker
+								selected={startDate}
+								onChange={(date) => setStartDate(date)}
+								className='ml-52'
+							/>
+						</div>
+						<div>
+							<h1 className='ml-52'>To:</h1>
+							<DatePicker
+								selected={startDate2}
+								onChange={(date) => setStartDate2(date)}
+								className='ml-52'
+							/>
+						</div>
 					</div>
-					<div className='flex mr-24 mt-10'>
-						<form action='' className='flex flex-col '>
-							<input
-								type='title'
-								name='title'
-								placeholder='TITLE'
-								className='w-full border border-gray-500 px-2'
-							/>
-							<input
-								type='text'
-								name='classcode'
-								placeholder='CLASS CODE'
-								className='w-full border border-gray-500 mt-2 px-2'
-							/>
-							<input
-								type='text'
-								name='body'
-								placeholder='BODY...'
-								className='w-full border  border-gray-500 mt-2 h-32 px-2'
-							/>
-							<input
-								type='submit'
-								name='submit'
-								value='submit'
-								className='bg-indigo-500 mt-4 border rounded-full p-2 text-white cursor-pointer'
-							/>
-						</form>
+					<div className='w-32 h-12  mt-48 bg-purple flex justify-center items-center border rounded-full'>
+						<FaDownload className='text-white text-2xl' />
 					</div>
 				</div>
 			</div>
@@ -91,4 +81,4 @@ const teacherAnnouncements = () => {
 	);
 };
 
-export default teacherAnnouncements;
+export default teacherExport;
