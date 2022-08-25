@@ -83,7 +83,9 @@ const teacherHome = () => {
 						</h1>
 						<div className='flex flex-col items-center justify-center'>
 							<h1>New Meeting</h1>
-							<AiFillPlusCircle className='text-3xl text-indigo-600' />
+							<Link href='/teacherMeet'>
+								<AiFillPlusCircle className='text-3xl text-indigo-600 cursor-pointer' />
+							</Link>
 						</div>
 					</div>
 					{/* box 3 */}
