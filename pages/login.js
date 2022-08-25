@@ -12,24 +12,18 @@ const index = () => {
 			<div className='flex flex-col'>
 				<div className='w-[32rem] h-min  mr-7 flex justify-center  mt-16'>
 					<Link href='/'>
-						<h1 className='font-bold text-2xl mt-16 ml-5 italic mr-8 underline underline-offset-8 decoration-purple-800 decoration-4 cursor-pointer'>
+						<h1 className='font-bold text-2xl mt-16 ml-5 italic mr-8   cursor-pointer'>
 							SIGN UP
 						</h1>
 					</Link>
 					<Link href='/login'>
-						<h1 className='font-bold text-2xl mt-16 mr-20 italic ml-8 cursor-pointer'>
+						<h1 className='font-bold text-2xl mt-16 mr-20 italic ml-8 cursor-pointer underline underline-offset-8 decoration-purple-800 decoration-4'>
 							LOGIN
 						</h1>
 					</Link>
 				</div>
 				<div className=' w-[32rem] h-min flex justify-center mt-5'>
 					<form action='' className='flex justify-center flex-col'>
-						<input
-							type='name'
-							name='name'
-							placeholder='Name'
-							className='border-2 border-b-slate-400 rounded-sm mt-10 w-72'
-						/>
 						<input
 							type='email'
 							name='email'
@@ -44,10 +38,15 @@ const index = () => {
 						/>
 					</form>
 				</div>
-				<div className='w-[32rem]  h-min flex justify-center mt-5'>
-					<Link href='/login'>
-						<button className='bg-purple text-white px-4 py-1 border-0 rounded-full text-xl'>
-							Sign Up
+				<div className='w-[32rem]  h-min flex justify-center mt-8'>
+					<Link href='studentHome'>
+						<button className='bg-purple text-white px-4 mx-3 py-1 border-0 rounded-full '>
+							Student Login
+						</button>
+					</Link>
+					<Link href='teacherHome'>
+						<button className='bg-purple text-white px-4 py-1 border-0 rounded-full mx-3'>
+							Teacher Login
 						</button>
 					</Link>
 				</div>
