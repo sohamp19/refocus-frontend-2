@@ -12,6 +12,7 @@ import { HiMenuAlt2 } from 'react-icons/hi';
 import { FaGraduationCap } from 'react-icons/fa';
 import Link from 'next/link';
 import AttendanceList from '../components/AttendanceList';
+import Avatar from 'react-avatar';
 
 const teacherHome = () => {
 	return (
