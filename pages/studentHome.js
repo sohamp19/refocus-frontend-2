@@ -10,6 +10,7 @@ import { BiLogOut } from 'react-icons/bi';
 import { HiMenuAlt2 } from 'react-icons/hi';
 import { FaGraduationCap } from 'react-icons/fa';
 import Link from 'next/link';
+import Chart from '../components/Chart';
 
 const studentHome = () => {
 	return (
@@ -100,6 +101,7 @@ const studentHome = () => {
 						</h1>
 					</div>
 				</div>
+				<Chart />
 			</div>
 		</div>
 	);

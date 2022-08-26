@@ -31,37 +31,51 @@ const index = () => {
 							type='email'
 							name='email'
 							placeholder='email'
-							className='border-2 border-b-slate-400 rounded-sm mt-10 w-72'
+							className='border-2 border-b-slate-400 rounded-sm mt-8 w-72'
 						/>
 						<input
 							type='password'
 							name='password'
 							placeholder='Password'
-							className='border-2 border-b-slate-400 rounded-sm mt-10 w-72'
+							className='border-2 border-b-slate-400 rounded-sm mt-6 w-72'
 						/>
-						<div>
-							<label htmlFor='student'>Student</label>
+						<div className='flex justify-between mx-8 mt-8 mb-3'>
+							<div>
+								<input
+									type='radio'
+									name='category'
+									value='student'
+									id='student'
+									className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
+								/>
+								<label
+									htmlFor='student'
+									className='ml-2 opacity-75 font-medium text-gray-900 '>
+									Student
+								</label>
+							</div>
+							<div>
+								<input
+									type='radio'
+									name='category'
+									value='teacher'
+									id='teacher'
+									className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
+								/>
+								<label
+									htmlFor='teacher'
+									className='ml-2 opacity-75 font-medium text-gray-900 '>
+									Teacher
+								</label>
+							</div>
+						</div>
+						<div className='flex items-center justify-center'>
 							<input
-								type='radio'
-								name='category'
-								value='student'
-								id='student'
+								type='submit'
+								value='Login'
+								className='bg-purple text-white text-xl border rounded-full cursor-pointer w-min px-5 py-1'
 							/>
 						</div>
-						<div>
-							<label htmlFor='teacher'>Teacher</label>
-							<input
-								type='radio'
-								name='category'
-								value='teacher'
-								id='teacher'
-							/>
-						</div>
-						<input
-							type='submit'
-							value='login'
-							className='bg-purple text-white border rounded-full cursor-pointer'
-						/>
 					</form>
 				</div>
 			</div>
