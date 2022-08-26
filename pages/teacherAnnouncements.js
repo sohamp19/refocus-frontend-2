@@ -65,25 +65,25 @@ const teacherAnnouncements = () => {
 								type='title'
 								name='title'
 								placeholder='TITLE'
-								className='w-full border border-gray-500 px-2'
+								className='w-full border border-gray-500 px-2 rounded-sm'
 							/>
 							<input
 								type='text'
 								name='classcode'
 								placeholder='CLASS CODE'
-								className='w-full border border-gray-500 mt-2 px-2'
+								className='w-full border border-gray-500 mt-2 px-2 rounded-sm'
 							/>
 							<input
 								type='text'
 								name='body'
 								placeholder='BODY...'
-								className='w-full border  border-gray-500 mt-2 h-32 px-2'
+								className='w-full border  border-gray-500 mt-2 h-32 px-2 rounded-sm'
 							/>
 							<input
 								type='submit'
 								name='submit'
 								value='submit'
-								className='bg-indigo-500 mt-4 border rounded-full p-2 text-white cursor-pointer'
+								className='bg-purple mt-4 border rounded-full p-2 text-white cursor-pointer'
 							/>
 						</form>
 					</div>

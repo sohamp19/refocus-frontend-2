@@ -3,16 +3,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BsCheckCircle } from 'react-icons/bs';
 
-// import Jitsi from 'react-jitsi';
-
-// AUDIO DOESN'T WORK IN NEXTJS FOR SOME REASON
-
-// import dynamic from 'next/dynamic';
-
-// const DynamicComponentWithNoSSR = dynamic(() => import('@jitsi/react-sdk'), {
-// 	ssr: false,
-// });
-
 const contextClass = {
 	success: 'bg-blue-600',
 	error: 'bg-red-600',
@@ -61,30 +51,6 @@ const teacherMeet = () => {
 				}
 				bodyClassName={() => 'text-sm font-white font-med block p-3'}
 			/>
-			{/* <DynamicComponentWithNoSSR
-				roomName='sohamparatesjitsimeet'
-				configOverwrite={{
-					startWithAudioMuted: true,
-					disableModeratorIndicator: true,
-					startScreenSharing: true,
-					enableEmailInStats: false,
-				}}
-				interfaceConfigOverwrite={{
-					DISABLE_JOIN_LEAVE_NOTIFICATIONS: true,
-				}}
-				userInfo={{
-					displayName: 'Soham Parate',
-				}}
-				onApiReady={(externalApi) => {
-					// here you can attach custom event listeners to the Jitsi Meet External API
-					// you can also store it locally to execute commands
-				}}
-				getIFrameRef={(iframeRef) => {
-					iframeRef.style.height = '600px';
-					iframeRef.style.width = '800px';
-				}}
-			/> */}
-			{/* <Jitsi roomName={roomName} displayName={userName} /> */}
 
 			<button
 				className='bg-blue-600 text-white px-4 border rounded-lg'

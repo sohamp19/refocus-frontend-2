@@ -59,7 +59,7 @@ const teacherHome = () => {
 					{/* box 1 */}
 					<div className='w-60 h-40 bg-white shadow-lg rounded-md flex flex-col'>
 						<div className='flex justify-between mx-4 mt-4'>
-							<h2>Activities</h2>
+							<h2>ACTIVITIES</h2>
 							<div>
 								<FaGraduationCap className='text-xl' />
 							</div>
@@ -83,7 +83,7 @@ const teacherHome = () => {
 						</h1>
 						<div className='flex flex-col items-center justify-center'>
 							<h1>New Meeting</h1>
-							<Link href='/teacherMeet'>
+							<Link href='http://localhost:3001/'>
 								<AiFillPlusCircle className='text-3xl text-indigo-600 cursor-pointer' />
 							</Link>
 						</div>
@@ -91,7 +91,7 @@ const teacherHome = () => {
 					{/* box 3 */}
 					<div className='w-60 h-40 bg-white shadow-lg rounded-md'>
 						<div className='flex justify-between mt-5 mx-5'>
-							<h1>Attendance</h1>
+							<h1>ANNOUNCEMENTS</h1>
 							<AiFillPushpin className='text-2xl' />
 						</div>
 						<h1 className='text-4xl font-bold pl-4 border-b-2 pb-2 mt-2'>
