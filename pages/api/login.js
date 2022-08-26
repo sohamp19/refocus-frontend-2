@@ -10,7 +10,12 @@ export default async function handler(req, res) {
 	if (!user) {
 		return res.json({ status: 'Not able to find the user' });
 	} else {
-		if (category === 'student') res.redirect('/studentHome');
-		if (category === 'teacher') res.redirect('/teacherHome');
+		if (category === 'student' && user.category === 'student')
+			res.redirect('/studentHome');
+		if (category === 'teacher' && user.category === 'teacher')
+			res.redirect('/teacherHome');
+		else {
+			res.json({ status: 'Wrong category' });
+		}
 	}
 }

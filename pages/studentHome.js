@@ -41,9 +41,9 @@ const studentHome = () => {
 						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
 							home
 						</h1>
-						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
-							calendar
-						</h1>
+						<Link href='/kanban'>
+							<h1 className='mx-3 cursor-pointer'>kanban</h1>
+						</Link>
 						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
 							profile
 						</h1>

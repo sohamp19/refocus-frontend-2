@@ -42,9 +42,9 @@ const teacherHome = () => {
 						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
 							home
 						</h1>
-						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
-							calendar
-						</h1>
+						<Link href='/kanban'>
+							<h1 className='mx-3 cursor-pointer'>kanban</h1>
+						</Link>
 						<Link href='/teacherExport'>
 							<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
 								export
