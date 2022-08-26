@@ -3,7 +3,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BsCheckCircle } from 'react-icons/bs';
 
-// AUDIO DOESN'T WORK IN NEXT JS FOR SOME REASON
+// import Jitsi from 'react-jitsi';
+
+// AUDIO DOESN'T WORK IN NEXTJS FOR SOME REASON
 
 // import dynamic from 'next/dynamic';
 
@@ -36,6 +38,9 @@ const teacherMeet = () => {
 	const audioPlay = () => {
 		audio.play();
 	};
+
+	// const roomName = 'teachers_internal_meeting_32746';
+	// const userName = 'My Name';
 
 	return (
 		<div className='flex items-center flex-col justify-center'>
@@ -79,6 +84,7 @@ const teacherMeet = () => {
 					iframeRef.style.width = '800px';
 				}}
 			/> */}
+			{/* <Jitsi roomName={roomName} displayName={userName} /> */}
 
 			<button
 				className='bg-blue-600 text-white px-4 border rounded-lg'
