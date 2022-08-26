@@ -8,7 +8,6 @@ import {
 } from 'react-icons/ai';
 import { BiLogOut } from 'react-icons/bi';
 import { HiMenuAlt2 } from 'react-icons/hi';
-import { FaGraduationCap } from 'react-icons/fa';
 import Iframe from 'react-iframe';
 
 const studentCalendar = () => {
@@ -39,7 +38,9 @@ const studentCalendar = () => {
 					</div>
 					<div className='flex justify-around  h-min items-center mt-8 mr-8'>
 						<h1 className='mx-3 cursor-pointer'>home</h1>
-						<h1 className='mx-3 cursor-pointer'>calendar</h1>
+						<Link href='/kanban'>
+							<h1 className='mx-3 cursor-pointer'>kanban</h1>
+						</Link>
 						<h1 className='mx-3 cursor-pointer'>profile</h1>
 						<div className='mx-3 cursor-pointer'>
 							<HiMenuAlt2 className='text-2xl' />

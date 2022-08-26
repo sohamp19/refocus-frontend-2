@@ -23,32 +23,60 @@ const index = () => {
 					</Link>
 				</div>
 				<div className=' w-[32rem] h-min flex justify-center mt-5'>
-					<form action='' className='flex justify-center flex-col'>
+					<form
+						action='/api/login'
+						method='post'
+						className='flex justify-center flex-col'>
 						<input
 							type='email'
 							name='email'
 							placeholder='email'
-							className='border-2 border-b-slate-400 rounded-sm mt-10 w-72'
+							className='border-2 border-b-slate-400 rounded-sm mt-8 w-72'
 						/>
 						<input
 							type='password'
 							name='password'
 							placeholder='Password'
-							className='border-2 border-b-slate-400 rounded-sm mt-10 w-72'
+							className='border-2 border-b-slate-400 rounded-sm mt-6 w-72'
 						/>
+						<div className='flex justify-between mx-8 mt-8 mb-3'>
+							<div>
+								<input
+									type='radio'
+									name='category'
+									value='student'
+									id='student'
+									className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
+								/>
+								<label
+									htmlFor='student'
+									className='ml-2 opacity-75 font-medium text-gray-900 '>
+									Student
+								</label>
+							</div>
+							<div>
+								<input
+									type='radio'
+									name='category'
+									value='teacher'
+									id='teacher'
+									className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
+								/>
+								<label
+									htmlFor='teacher'
+									className='ml-2 opacity-75 font-medium text-gray-900 '>
+									Teacher
+								</label>
+							</div>
+						</div>
+						<div className='flex items-center justify-center'>
+							<input
+								type='submit'
+								value='Login'
+								className='bg-purple text-white text-xl border rounded-full cursor-pointer w-min px-5 py-1'
+							/>
+						</div>
 					</form>
-				</div>
-				<div className='w-[32rem]  h-min flex justify-center mt-8'>
-					<Link href='studentHome'>
-						<button className='bg-purple text-white px-4 mx-3 py-1 border-0 rounded-full '>
-							Student Login
-						</button>
-					</Link>
-					<Link href='teacherHome'>
-						<button className='bg-purple text-white px-4 py-1 border-0 rounded-full mx-3'>
-							Teacher Login
-						</button>
-					</Link>
 				</div>
 			</div>
 		</div>

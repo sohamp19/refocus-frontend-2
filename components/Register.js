@@ -13,6 +13,8 @@ const Register = () => {
 				/>
 				<label htmlFor=''>Password</label>
 				<input type='password' name='password' placeholder='password' />
+				{/* <input type='radio' value='student' name='category' />
+				<input type='radio' value='teacher' name='category' /> */}
 				<input type='submit' value='register' />
 			</form>
 		</div>

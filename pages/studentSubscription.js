@@ -38,7 +38,9 @@ const studentSubscription = () => {
 					</div>
 					<div className='flex justify-around  h-min items-center mt-8 mr-8'>
 						<h1 className='mx-3 cursor-pointer'>home</h1>
-						<h1 className='mx-3 cursor-pointer'>calendar</h1>
+						<Link href='/kanban'>
+							<h1 className='mx-3 cursor-pointer'>kanban</h1>
+						</Link>
 						<Link href='/teacherExport'>
 							<h1 className='mx-3 cursor-pointer'>export</h1>
 						</Link>

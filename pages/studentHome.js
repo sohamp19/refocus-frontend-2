@@ -10,6 +10,7 @@ import { BiLogOut } from 'react-icons/bi';
 import { HiMenuAlt2 } from 'react-icons/hi';
 import { FaGraduationCap } from 'react-icons/fa';
 import Link from 'next/link';
+import Chart from '../components/Chart';
 
 const studentHome = () => {
 	return (
@@ -41,9 +42,9 @@ const studentHome = () => {
 						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
 							home
 						</h1>
-						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
-							calendar
-						</h1>
+						<Link href='/kanban'>
+							<h1 className='mx-3 cursor-pointer'>kanban</h1>
+						</Link>
 						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
 							profile
 						</h1>
@@ -100,6 +101,7 @@ const studentHome = () => {
 						</h1>
 					</div>
 				</div>
+				<Chart />
 			</div>
 		</div>
 	);

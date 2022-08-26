@@ -42,9 +42,9 @@ const teacherHome = () => {
 						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
 							home
 						</h1>
-						<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
-							calendar
-						</h1>
+						<Link href='/kanban'>
+							<h1 className='mx-3 cursor-pointer'>kanban</h1>
+						</Link>
 						<Link href='/teacherExport'>
 							<h1 className='mx-3 cursor-pointer hover:text-purple-900 transition-transform'>
 								export
@@ -83,7 +83,9 @@ const teacherHome = () => {
 						</h1>
 						<div className='flex flex-col items-center justify-center'>
 							<h1>New Meeting</h1>
-							<AiFillPlusCircle className='text-3xl text-indigo-600' />
+							<Link href='/teacherMeet'>
+								<AiFillPlusCircle className='text-3xl text-indigo-600 cursor-pointer' />
+							</Link>
 						</div>
 					</div>
 					{/* box 3 */}
